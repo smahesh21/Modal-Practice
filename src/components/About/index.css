@@ -1,0 +1,41 @@
+.about-container {
+  height: 100vh;
+}
+.desktop-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-section {
+  display: none;
+}
+.about-lg-image {
+  height: 400px;
+  width: 400px;
+}
+.lg-about {
+  font-family: 'Roboto';
+  font-size: 30px;
+  color: #616e7c;
+}
+@media screen and (max-width: 576px) {
+  .desktop-section {
+    display: none;
+  }
+  .mobile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #616e7c;
+  }
+  .about-image {
+    height: 150px;
+    width: 150px;
+  }
+  .about {
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: #616e7c;
+  }
+}
